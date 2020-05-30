@@ -65,7 +65,11 @@ function dadito() {
       } else {
         console.log("Lamentablemenre, perdiste");
         nuevoSaldo = saldoA_apostar * 0;
-        console.log("El nuevo saldo es:", nuevoSaldo, "soles");
+        console.log(
+          "Aun tienes:",
+          saldoInicialUsuario - saldoA_apostar,
+          "soles"
+        );
         resultado.innerHTML += `
           <p class="resultado bad"><b>Lamentablemenre, perdiste :(</b></p> 
           <p>
