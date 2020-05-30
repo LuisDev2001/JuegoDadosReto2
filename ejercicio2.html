@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222222;
+      }
+      .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 40rem;
+        padding: 3rem 0;
+      }
+      .container {
+        width: 350px;
+        height: 350px;
+        box-shadow: 0 0 10px rgba(53, 53, 53, 0.3);
+        border-radius: 10px;
+        background: #b0b0f3;
+        border: 1px solid #8c8cf0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #4d22b1;
+      }
+      h4 {
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-shadow: 0 0 10px rgba(53, 53, 53, 0.5);
+      }
+      .resultado {
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      .resultado.bad {
+        background: #fd8585;
+      }
+      .resultado.good {
+        background: #abfc9b;
+      }
+      .rules {
+        padding: 1rem;
+      }
+      .rules h3 {
+        margin-bottom: 0.7rem;
+        font-size: 1.7rem;
+        color: #f76151;
+      }
+      .rules li {
+        margin-bottom: 0.5rem;
+      }
+      .rules li:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>El juego de los dados locos</h1>
+      <div class="rules">
+        <h3>Reglas</h3>
+        <ol>
+          <li>Si pierdes, la casa se queda con todo.</li>
+          <li>Si ganas, lo que apostaste se duplicara.</li>
+          <li>Solo vale colocar numero del 1 al 6, obvio es un dado xD</li>
+        </ol>
+      </div>
+      <div class="container"></div>
+    </div>
+    <script src="./js/ejercicio2.js"></script>
+  </body>
+</html>
